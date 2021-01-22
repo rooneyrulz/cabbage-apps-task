@@ -1,0 +1,66 @@
+.app {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: auto;
+}
+
+.app__wrapper {
+  width: 40%;
+  border: 2px solid #eaeaea;
+  border-radius: 0.25rem;
+  padding: 3rem 4rem;
+}
+
+.app__wrapper h1 {
+  margin-bottom: 1.5rem;
+}
+
+.app__wrapper .task__creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.app__wrapper .task__item {
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eaeaea;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.app__wrapper .task__item span:nth-child(2) {
+  cursor: pointer;
+}
+
+.is__done {
+  background-color: #191919 !important;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.is__done i {
+  color: #fff;
+}
+
+.is__done label span:nth-child(2) {
+  color: #fff;
+}
